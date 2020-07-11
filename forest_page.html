@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>punokyoung</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="stylesheet" href="css/leaflet.css"><link rel="stylesheet" href="css/L.Control.Locate.min.css">
+<link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+<link rel="stylesheet" href="css/leaflet-search.css">
+<link rel="stylesheet" href="css/leaflet-control-geocoder.Geocoder.css">
+<link rel="stylesheet" href="css/leaflet-measure.css">
+</head>
+<style> body{width: 100%; background-image:url(images/wallpaper.jpg);} </style>
+<style> .container{ max-width:95%; min-width:80%}</style>
+<style> .container h5{ text-align:center; width:100%; margin:0 auto;font-size:medium; padding-top:10%}</style>
+<style> .container h6{ text-align:left; width:100%; margin:0 auto;font-size: medium; padding: 2% 2%; color:#060}</style>
+<style> #containf{ text-align:left; width:50%;font-size: xx-small; padding: 5px 5px; position: relative; float:right; padding: 30 30}</style>
+<style> .heading{width: 100%; height:auto; background-color: #253b80; font-family: Verdana, Geneva, sans-serif;
+}</style>
+<style> #f1.forest{background-color: #FFF; width:100%; border-radius:25px; margin-top:20px;
+border-color:#000; box-shadow: 5px 5px 15px 5px rgba(50, 50, 50, .5) inset;} </style>
+<body>
+    <div class="container">
+      <div class="heading">
+      	<div class="fa-image"><img src="images/logo.png" width="60%" /></div>
+      </div>
+   	  <nav class="navbar navbar-expand-xl navbar-light" style="background-color:#F63; height:auto">
+        	<a class="navbar-brand" href="#">ตำบลพุนกยูง</a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+		  <span class="navbar-toggler-icon"></span>
+ 			</button>
+            <div class="collapse navbar-collapse" id="navbarMenu" style="text-align: left">
+            	<ul class="navbar-nav" style = "margin:auto"> 
+                	<li class="nav-item active">
+                    <style> a.nav-link:hover{ background-color:#900; border-radius:5px;}</style>
+                   	  <a class="nav-link" href="index.html">หน้าแรก</a>
+                	</li>
+                    <li class="nav-item active">
+                   	  <a class="nav-link" href="soil_page.html">ทรัพยากรดิน</a>
+                	</li>
+                    <li class="nav-item active">
+                   	  <a class="nav-link" href="water_page.html">ทรัพยากรน้ำ</a>
+                	</li>
+                    <li class="nav-item active">
+                   	  <a class="nav-link" href="forest_page.html">ทรัพยากรป่าไม้</a>
+                	</li>
+                    <li class="nav-item active">
+                   	  <a class="nav-link" href="aboutus_page.html">เกี่ยวกับเรา</a>
+                	</li>
+                </ul>
+            </div>
+		</nav>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	</div>
+    	<div class="container">
+        	<section class="forest" id = "f1">
+				<h6>โครงการป่าชุมชนบ้านพุเม่น</h6>
+            	<img src="images/forest1.jpeg" width="60%"/>
+        		<p style="text-align:left; padding:0 5% 2% 10%; font-size:x-small">
+            	รายละเอียด <br>
+				ชื่อป่าชุมชน: โครงการป่าชุมชนบ้านพุเม่่น<br>
+				ปีทีเริ่มโครงการ: พ.ศ. 2562<br>
+				เนื้อที่ : 344 ไร่ 0 งาน 0 ตารางวา<br>
+				ประเภทป่า : ป่าตาม พ.ร.บ. ป่าไม้ พ.ศ.2484<br>
+				สถาพทั่วไป : พื้นที่เป็นภูเขาลูกโดด เนินเขา และชายเขา มีความสูงไม่มากนัก 		บริเวณโดยรอบเป็นพื้นที่ทำการเกษตรไร่มันสำปะหลัง และข้าวโพดเลี้ยงสัตว์ ลักษณะดินเป็นดินร่วนปนทราย<br>
+				หมู่บ้าน : พุเม่น (หมู่ 3)
+				</P>
+            </section>
+            <section class="forest" id = "f1">
+				<h6>โครงการป่าชุมชนบ้านไตรคีรี</h6>
+            	<img src="images/forest2.jpeg" width="60%"/>
+        		<p style="text-align:left; padding:0 5% 2% 10%; font-size:x-small">
+            	รายละเอียด <br>
+				ชื่อป่าชุมชน: โครงการป่าชุมชนบ้านไตรคีรี<br>
+				ปีทีเริ่มโครงการ: พ.ศ. 2562<br>
+				เนื้อที่ : 147 ไร่ 0 งาน 0 ตารางวา<br>
+				ประเภทป่า : ป่าตาม พ.ร.บ. ป่าไม้ พ.ศ.2484<br>
+				สถาพทั่วไป : พื้นที่เป็นภูเขา 3 ลูก มีความสูงไม่มากนัก ส่วนบริเวณชายเขาโดยรอบเป็นพื้นที่ทำการเกษตร ลักษณะดินเป็นดินเหนียวปนหิน<br>
+				หมู่บ้าน : ไตรคีรี (หมู่ 6)
+				</P>
+            </section>
+        </div>
+    </div>
+        
+</body>
+</html>
+
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>punokyoung</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="stylesheet" href="css/leaflet.css"><link rel="stylesheet" href="css/L.Control.Locate.min.css">
+<link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+<link rel="stylesheet" href="css/leaflet-search.css">
+<link rel="stylesheet" href="css/leaflet-control-geocoder.Geocoder.css">
+<link rel="stylesheet" href="css/leaflet-measure.css">
+</head>
+<style> body{width: 100%; background-image:url(images/wallpaper.jpg);} </style>
+<style> .container{ max-width:95%; min-width:80%}</style>
+<style> .container h5{ text-align:center; width:100%; margin:0 auto;font-size:medium; padding-top:10%}</style>
+<style> .container h6{ text-align:left; width:100%; margin:0 auto;font-size: medium; padding: 2% 2%; color:#060}</style>
+<style> #containf{ text-align:left; width:50%;font-size: xx-small; padding: 5px 5px; position: relative; float:right; padding: 30 30}</style>
+<style> .heading{width: 100%; height:auto; background-color: #253b80; font-family: Verdana, Geneva, sans-serif;
+}</style>
+<style> #f1.forest{background-color: #FFF; width:100%; border-radius:25px; margin-top:20px;
+border-color:#000; box-shadow: 5px 5px 15px 5px rgba(50, 50, 50, .5) inset;} </style>
+<body>
+    <div class="container">
+      <div class="heading">
+      	<div class="fa-image"><img src="images/logo.png" width="60%" /></div>
+      </div>
+   	  <nav class="navbar navbar-expand-xl navbar-light" style="background-color:#F63; height:auto">
+        	<a class="navbar-brand" href="#">ตำบลพุนกยูง</a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+		  <span class="navbar-toggler-icon"></span>
+ 			</button>
+            <div class="collapse navbar-collapse" id="navbarMenu" style="text-align: left">
+            	<ul class="navbar-nav" style = "margin:auto"> 
+                	<li class="nav-item active">
+                   	  <a class="nav-link" href="index.html">หน้าแรก</a>
+                	</li>
+                    <li class="nav-item active">
+                   	  <a class="nav-link" href="soil_page.html">ทรัพยากรดิน</a>
+                	</li>
+                    <li class="nav-item active">
+                   	  <a class="nav-link" href="water_page.html">ทรัพยากรน้ำ</a>
+                	</li>
+                    <li class="nav-item active">
+                   	  <a class="nav-link" href="forest_page.html">ทรัพยากรป่าไม้</a>
+                	</li>
+                    <li class="nav-item active">
+                   	  <a class="nav-link" href="aboutus_page.html">เกี่ยวกับเรา</a>
+                	</li>
+                </ul>
+            </div>
+		</nav>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	</div>
+    	<div class="container">
+        	<section class="forest" id = "f1">
+				<h6>ชุดดิน</h6>				
+					<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1OJ1O4B7rTgtDXptKqEd-xbf0vxue2QT6" width="100%" height="480"></iframe>
+					<style> p {text-align:left; font-size:x-small; background-color: #FFF; width:300px; border-radius:25px; 
+border-color:#000; box-shadow: 5px 5px 15px 5px rgba(50, 50, 50, .5) inset; margin-top:5%; padding:3%;} </style>
+					<style> .soil{margin: 15px 15px 15px 15px}
+					</style><!--soiddescription-->
+					
+					<div style = "display:flex; justify-content: flex-start; flex-wrap: wrap-reverse"; margin:0> 
+						<div class ="soil">
+							<p>ชุดดินตาคลี <br>  ลักษณะและสมบัติดิน เป็นดินตื้นถึงชั้นปูนมาร์ลที่พบภายใน 50 ซม.จากผิวดินดินบนเป็นดินร่วนปนดินเหนียวหรือดินเหนียวปนทรายแป้ง สีดำ สีเทาเข้มมาก สีน้ำตาลปนเทาเข้มมาก หรือสีน้ำตาลเข้มมาก ปฏิกิริยาดินเป็นกลางถึงเป็นด่างปานกลาง (pH 7.0-8.0)
+								<a href = http://oss101.ldd.go.th/web_thaisoils/pf_desc/north/Tk.htm> <button>อ่านต่อ</button> </a>
+							</p>
+						</div>
+						<div class ="soil">
+							<p>ชุดดินปากช่อง<br>  ลักษณะและสมบัติดิน เป็นดินลึกมาก ดินบนเป็นดินเหนียวหรือดินเหนียวปนทรายแป้ง สีน้ำตาลปนแดงเข้ม ดินล่างเป็นดินเหนียว สีน้ำตาลปนแดงเข้ม สีแดง อาจพบก้อนเหล็กและแมงกานีสสะสมใน ดินล่าง ปฏิกิริยาดินเป็นกรดปานกลางถึงเป็นกลาง (pH 6.0-7.0)
+								<a href =http://oss101.ldd.go.th/thaisoils_museum/pf_desc/northeast/Pc.htm> <button>อ่านต่อ</button> </a>
+							</p>
+						</div>
+						<div class ="soil">
+							<p>ชุดดินลพบุรี<br>  ลักษณะและสมบัติของดิน เป็นดินลึก ดินบนเป็นดินเหนียว สีดำหรือสีเทาเข้ม ปฏิกิริยาดินเป็นกรดเล็กน้อยถึงด่างปานกลาง (pH 6.5-8.0) ดินล่างตอนล่างเป็นดินเหนียว สีดำหรือสีน้ำตาลปนเทา ปฏิกิริยาดินเป็นด่างปานกลาง (pH 8.0 )
+								<a href = http://oss101.ldd.go.th/web_thaisoils/pf_desc/north/Tk.htm> <button>อ่านต่อ</button> </a>
+							</p>
+						</div>
+						<div class ="soil">
+							<p>ชุดดินทับกวาง<br>  ลักษณะและสมบัติของดิน เป็นดินลึกปานกลาง พบเศษหินและก้อนปูนทุติยภูมิที่ระดับความลึก 50-100 ซม. ดินบนเป็นดินร่วนปนดินเหนียวหรือดินเหนียว สีน้ำตาลเข้มหรือสีน้ำตาลปนแดงเข้ม ปฏิกริยาดินเป็นกรดปานกลางถึงกลาง  (pH 6.0-7.0)
+								<a href = http://iddindee.ldd.go.th/SoilSeries/T_2/4_Series_(Tw).pdf> <button>อ่านต่อ</button> </a>
+							</p>
+						</div>
+					</div>
+					
+            </section>
+        </div>
+    </div>
+        
+</body>
+</html>
+
+
